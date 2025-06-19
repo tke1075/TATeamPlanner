@@ -1,14 +1,11 @@
 # TA Team Capacity Planner
 
-## Setup Instructions (For Replit or Local)
+## How to Use
 
-1. Go to [https://replit.com](https://replit.com)
-2. Create a new Repl using the **HTML, CSS, JS** template
-3. Upload the contents of this `.zip` into your Repl
-4. Click **Run** to preview the app
-5. Use the **Share > Embed** option to add it to your Wix site
+1. Open `index.html` in a browser to view the planner.
+2. Fill in your company size, turnover, hiring period, and net new hires.
+3. Click "Submit" to see estimated replacements and total hires.
 
-## Next Steps
+## Deployment
 
-- Form inputs and logic to be expanded in `script.js`
-- Download functionality for PDF/Excel to be added
+- Works on Replit, Vercel, Netlify, or local file systems.

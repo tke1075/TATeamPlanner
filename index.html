@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>TA Team Capacity Planner</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TA Team Capacity Planner</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1>TA Team Capacity Planner</h1>
-    <div id="planner-app"></div>
-    <script src="script.js"></script>
+  <h1>TA Team Capacity Planner</h1>
+  <form id="ta-planner-form">
+    <label for="companySize">Company Size:</label>
+    <input type="number" id="companySize" name="companySize" />
+
+    <label for="turnoverRate">Expected Annual Turnover (%):</label>
+    <input type="number" id="turnoverRate" name="turnoverRate" step="0.1" />
+
+    <label for="hiringPeriod">Hiring Period:</label>
+    <select id="hiringPeriod" name="hiringPeriod">
+      <option value="3">3 months</option>
+      <option value="6">6 months</option>
+      <option value="12">12 months</option>
+    </select>
+
+    <label for="netNewHires">Planned Total Net New Hires for the Hiring Period:</label>
+    <input type="number" id="netNewHires" name="netNewHires" />
+
+    <label for="aiUsage">AI Usage (Check all that apply):</label><br/>
+    <input type="checkbox" name="aiUsage" value="sourcing"> Sourcing<br/>
+    <input type="checkbox" name="aiUsage" value="recommendations"> Recommendations<br/>
+    <input type="checkbox" name="aiUsage" value="outreach"> Outreach<br/>
+    <input type="checkbox" name="aiUsage" value="none" checked> No AI Use<br/><br/>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
